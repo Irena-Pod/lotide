@@ -1,3 +1,4 @@
+//TEST ASSERTION FUNCTIONS
 const eqArrays = function (array1, array2) {
   if (array1.length !== array2.length) 
     return false
@@ -16,6 +17,7 @@ const assertArraysEqual = function (array1, array2) {
     console.log(`🔴 Assertion Failed:[${array1}] !== [${array2}]`);
 }
 
+//ACTUAL FUNCTION
 const without = function (sourceArray, itemsToRemove) {
   let newArray = [];
 
@@ -42,3 +44,4 @@ console.log(without([1, 2, 3], [1])); // => [2, 3]
 console.log(without(["1", "2", "3"], [1, 2, "3"]));// => ["1", "2"]
 console.log(without(["hello", "world", "loopy", "lighthouse", "Loopy"], ["loopy"]));// => ["hello", "world", "lighthouse", "Loopy"]
 console.log(without([1, 2, "3", "4", 5],["5"]));
+
