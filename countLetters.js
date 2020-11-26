@@ -50,3 +50,6 @@ assertEqual(result2["r"], 1);// => Should Pass
 
 // test to check that no non-letter characters are counted
 console.log(countLetters("heelo.()!!my name><"))
+
+
+

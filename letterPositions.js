@@ -22,7 +22,6 @@ const letterPositions = function (sentence) {
   const results = {};
   let lowerCased = sentence.toLowerCase()
 
-
   for (let i = 0; i < lowerCased.length; i++) {
     if (lowerCased[i].match(/[a-zA-Z]/)) {
       let letter = lowerCased[i]
@@ -34,7 +33,6 @@ const letterPositions = function (sentence) {
   }
   return results;
 };
-
 
 //Test Cases
 console.log(letterPositions("hello"))
