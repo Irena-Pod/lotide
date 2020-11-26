@@ -14,7 +14,7 @@ const countLetters = function (sentence) {
   let lowerCased = sentence.toLowerCase()
 
   for (const letter of lowerCased) {
-    if (letter !== " ") {
+    if (letter.match(/[a-zA-Z]/)) {
       if (letters[letter]) {
         letters[letter] += 1;
       } else {
@@ -47,3 +47,6 @@ assertEqual(result2["s"], 2);// => Should FAIL
 assertEqual(result2["s"], 1);// => Should Pass
 assertEqual(result2["r"], 0);//=> Should FAIL
 assertEqual(result2["r"], 1);// => Should Pass
+
+// test to check that no non-letter characters are counted
+console.log(countLetters("heelo.()!!my name><"))
