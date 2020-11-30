@@ -34,6 +34,8 @@ const letterPositions = function (sentence) {
   return results;
 };
 
+module.exports = letterPositions;
+
 //Test Cases
 console.log(letterPositions("hello"))
 //expected output: { h: [ 0 ], e: [ 1 ], l: [ 2, 3 ], o: [ 4 ] }

@@ -25,6 +25,7 @@ const countLetters = function (sentence) {
   return letters;
 }
 
+module.exports = countLetters;
 
 //TEST CASES
 const result1 = countLetters("hello");

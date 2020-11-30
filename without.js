@@ -29,6 +29,8 @@ const without = function (sourceArray, itemsToRemove) {
   return newArray;
 }
 
+module.exports = without;
+
 //Test Cases: make sure the original array was not altered by the without function
 const words = ["hello", "world", "lighthouse"];
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
