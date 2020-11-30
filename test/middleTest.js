@@ -1,8 +1,21 @@
-const middle = require ("../middle");
-const assertArraysEqual = require ("../assertArraysEqual")
+const { assert } = require("chai");
+const middle = require("../middle");
 
-//Assertion Test Cases
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]); // => Should PASS
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [2, 3]); // => Should FAIL
-assertArraysEqual(middle(["Pizza", "Cheeseburger", "Pasta", "Soup", "Salad"]), ["Pasta"]); // => Should PASS
-assertArraysEqual(middle([1, 2]), []);// => should PASS
+describe("#middle", () => {
+  it("returns [2, 3] for [1, 2, 3, 4]", () => {
+    assert.deepEqual(middle([1, 2, 3, 4]), [2, 3])
+  });
+
+  it("returns [\"Pasta\"] for [\"Pizza\", \"Cheeseburger\", \"Pasta\", \"Soup\", \"Salad\"]", () => {
+    assert.deepEqual(middle(["Pizza", "Cheeseburger", "Pasta", "Soup", "Salad"]), ["Pasta"])
+  });
+
+  it("returns [3] for [1, 2, 3, 4, 5]", () => {
+    assert.deepEqual(middle([1, 2, 3, 4, 5]), [3])
+  });
+
+  it("returns [] for [1, 2]", () => {
+    assert.deepEqual(middle([1, 2]), [])
+  });
+});
+
