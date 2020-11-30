@@ -22,7 +22,4 @@ module.exports = {
   findKey: findKey,
   countOnly: countOnly,
   countLetters: countLetters
-
-
-
 };
