@@ -31,17 +31,17 @@ const map = function (array, callback) {
 
 module.exports = map;
 
-const results1 = map(words, word => word[0]);
-console.log(results1);
+// const results1 = map(words, word => word[0]);
+// console.log(results1);
 
-const results2 = map(words, word => words.indexOf(word));
-console.log(results2);
+// const results2 = map(words, word => words.indexOf(word));
+// console.log(results2);
 
-const results3 = map(words, word => word.length);
-console.log(results3);
+// const results3 = map(words, word => word.length);
+// console.log(results3);
 
-//TEST CASES
-assertArraysEqual(results1, ["g", "c", "t", "m", "t"]);// => Should PASS
-assertArraysEqual(results2, [0, 1, 2, 3, 4]);// => Should PASS
-assertArraysEqual(results3, [6, 7, 2, 5, 3]);// => Should PASS
+// //TEST CASES
+// assertArraysEqual(results1, ["g", "c", "t", "m", "t"]);// => Should PASS
+// assertArraysEqual(results2, [0, 1, 2, 3, 4]);// => Should PASS
+// assertArraysEqual(results3, [6, 7, 2, 5, 3]);// => Should PASS
 

@@ -28,29 +28,29 @@ const countOnly = function(allItems, itemsToCount) {
 module.exports = countOnly;
 
 //Test Case 1
-const firstNames = [
-  "Karl",
-  "Salima",
-  "Agouhanna",
-  "Fang",
-  "Kavith",
-  "Jason",
-  "Salima",
-  "Fang",
-  "Joe"
-];
+// const firstNames = [
+//   "Karl",
+//   "Salima",
+//   "Agouhanna",
+//   "Fang",
+//   "Kavith",
+//   "Jason",
+//   "Salima",
+//   "Fang",
+//   "Joe"
+// ];
 
-const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
+// const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
 
-assertEqual(result1["Jason"], 1);
-assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Fang"], 2);
-assertEqual(result1["Agouhanna"], undefined);
+// assertEqual(result1["Jason"], 1);
+// assertEqual(result1["Karima"], undefined);
+// assertEqual(result1["Fang"], 2);
+// assertEqual(result1["Agouhanna"], undefined);
 
-//Test Cases 2
-const faveFoods = ["pizza", "pasta", "cake", "burger", "fries", "pizza", "pizza"];
-const result2 = countOnly(faveFoods, {"pizza": true, "salad": true, "kiwi": true});
+// //Test Cases 2
+// const faveFoods = ["pizza", "pasta", "cake", "burger", "fries", "pizza", "pizza"];
+// const result2 = countOnly(faveFoods, {"pizza": true, "salad": true, "kiwi": true});
 
-assertEqual(result2["pizza"], 3);
-assertEqual(result2["kiwi"], undefined);
-assertEqual(result2["cake"], undefined);
+// assertEqual(result2["pizza"], 3);
+// assertEqual(result2["kiwi"], undefined);
+// assertEqual(result2["cake"], undefined);

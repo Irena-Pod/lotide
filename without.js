@@ -32,18 +32,18 @@ const without = function (sourceArray, itemsToRemove) {
 module.exports = without;
 
 //Test Cases: make sure the original array was not altered by the without function
-const words = ["hello", "world", "lighthouse"];
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+// const words = ["hello", "world", "lighthouse"];
+// assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 
-const names = ["Irena", "Adam", "Alex", "Elen"];
-assertArraysEqual(names, ["Irena", "Adam", "Alex", "Elen"]);
+// const names = ["Irena", "Adam", "Alex", "Elen"];
+// assertArraysEqual(names, ["Irena", "Adam", "Alex", "Elen"]);
 
-/*
-Test Cases: return a new array with only those elements from source
-hat are not present in the itemsToRemove array.
-*/
-console.log(without([1, 2, 3], [1])); // => [2, 3]
-console.log(without(["1", "2", "3"], [1, 2, "3"]));// => ["1", "2"]
-console.log(without(["hello", "world", "loopy", "lighthouse", "Loopy"], ["loopy"]));// => ["hello", "world", "lighthouse", "Loopy"]
-console.log(without([1, 2, "3", "4", 5],["5"]));
+// /*
+// Test Cases: return a new array with only those elements from source
+// hat are not present in the itemsToRemove array.
+// */
+// console.log(without([1, 2, 3], [1])); // => [2, 3]
+// console.log(without(["1", "2", "3"], [1, 2, "3"]));// => ["1", "2"]
+// console.log(without(["hello", "world", "loopy", "lighthouse", "Loopy"], ["loopy"]));// => ["hello", "world", "lighthouse", "Loopy"]
+// console.log(without([1, 2, "3", "4", 5],["5"]));
 

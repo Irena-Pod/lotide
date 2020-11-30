@@ -27,30 +27,30 @@ const countLetters = function (sentence) {
 
 module.exports = countLetters;
 
-//TEST CASES
-const result1 = countLetters("hello");
+// //TEST CASES
+// const result1 = countLetters("hello");
 
-assertEqual(result1["h"], 1);// => Should Pass
-assertEqual(result1["e"], 1);// => Should Pass
-assertEqual(result1["l"], 2);// => Should Pass
-assertEqual(result1["o"], 1);// => Should Pass
-assertEqual(result1["a"], 1);// => Should FAIL
+// assertEqual(result1["h"], 1);// => Should Pass
+// assertEqual(result1["e"], 1);// => Should Pass
+// assertEqual(result1["l"], 2);// => Should Pass
+// assertEqual(result1["o"], 1);// => Should Pass
+// assertEqual(result1["a"], 1);// => Should FAIL
 
-const result2 = countLetters("My name is Irena");
+// const result2 = countLetters("My name is Irena");
 
-assertEqual(result2["m"], 2);// => Should Pass
-assertEqual(result2["y"], 1);// => Should Pass
-assertEqual(result2["n"], 2);// => Should Pass
-assertEqual(result2["a"], 2);// => Should Pass
-assertEqual(result2["e"], 2);// => Should Pass
-assertEqual(result2["i"], 2);// => Should Pass
-assertEqual(result2["s"], 2);// => Should FAIL
-assertEqual(result2["s"], 1);// => Should Pass
-assertEqual(result2["r"], 0);//=> Should FAIL
-assertEqual(result2["r"], 1);// => Should Pass
+// assertEqual(result2["m"], 2);// => Should Pass
+// assertEqual(result2["y"], 1);// => Should Pass
+// assertEqual(result2["n"], 2);// => Should Pass
+// assertEqual(result2["a"], 2);// => Should Pass
+// assertEqual(result2["e"], 2);// => Should Pass
+// assertEqual(result2["i"], 2);// => Should Pass
+// assertEqual(result2["s"], 2);// => Should FAIL
+// assertEqual(result2["s"], 1);// => Should Pass
+// assertEqual(result2["r"], 0);//=> Should FAIL
+// assertEqual(result2["r"], 1);// => Should Pass
 
-// test to check that no non-letter characters are counted
-console.log(countLetters("heelo.()!!my name><"))
+// // test to check that no non-letter characters are counted
+// console.log(countLetters("heelo.()!!my name><"))
 
 
 
